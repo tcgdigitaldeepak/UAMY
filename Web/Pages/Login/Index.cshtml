@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+}
+
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+@if (ViewData["unauthorized"] != null)
+{
+    <h3>@ViewData["unauthorized"]</h3>
+}
+
+<p>Use this area to provide additional information.</p>
